@@ -3,5 +3,6 @@ cd myRepo
 git init
 
 echo "Hello Git" > notes.txt
-git add notes.txt           # Stage file
+git add notes.txt          
+
 git commit -m "Initial commit with notes.txt"
