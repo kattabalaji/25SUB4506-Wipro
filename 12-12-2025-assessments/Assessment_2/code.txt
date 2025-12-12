@@ -1,0 +1,12 @@
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_2>git branch feature
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_2>git switch feature
+Switched to branch 'feature'
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_2>echo "Feature changes" >Assessment_2.txt
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_2>git add Assessment_2.txt
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_2>git commit -m "Added feature changes"
+[master 8b8505a] Added feature changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)

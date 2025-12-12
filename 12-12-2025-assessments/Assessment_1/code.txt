@@ -1,0 +1,7 @@
+mkdir myRepo
+cd myRepo
+git init
+
+echo "Hello Git" > notes.txt
+git add notes.txt           # Stage file
+git commit -m "Initial commit with notes.txt"

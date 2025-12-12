@@ -1,0 +1,25 @@
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git commit -m "first commit"
+[main (root-commit) 3995311] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Assessment_3.txt
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git branch
+* main
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git branch -M main
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git branch hotfix
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git switch hotfix
+Switched to branch 'hotfix'
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git switch main
+Switched to branch 'main'
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>echo "Hotfix applied" >Assessment_3.txt
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git add Assessment_3.txt
+
+C:\Users\balaji katta\OneDrive\Pictures\wipro training\12-12-2025-assessments\Assessment_3>git commit -m "Fixed critical issue in hotfix branch"
+[main 2bb0894] Fixed critical issue in hotfix branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
