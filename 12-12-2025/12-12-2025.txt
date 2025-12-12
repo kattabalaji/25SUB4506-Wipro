@@ -1,0 +1,908 @@
+
+C:\Users\balaji katta>md testgit
+
+C:\Users\balaji katta>cd testgit
+
+C:\Users\balaji katta\testgit>md gitPractice
+
+C:\Users\balaji katta\testgit>cd gitPractice
+
+C:\Users\balaji katta\testgit\gitPractice>dir
+ Volume in drive C is OS
+ Volume Serial Number is 122C-0D6C
+
+ Directory of C:\Users\balaji katta\testgit\gitPractice
+
+12-12-2025  12:10    <DIR>          .
+12-12-2025  12:10    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  99,904,655,360 bytes free
+
+C:\Users\balaji katta\testgit\gitPractice>git add notesTest.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>git clone https://github.com/kattabalaji/testOne
+Cloning into 'testOne'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+C:\Users\balaji katta\testgit\gitPractice>git add test.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>git add testOne.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>dir
+ Volume in drive C is OS
+ Volume Serial Number is 122C-0D6C
+
+ Directory of C:\Users\balaji katta\testgit\gitPractice
+
+12-12-2025  12:11    <DIR>          .
+12-12-2025  12:10    <DIR>          ..
+12-12-2025  12:11    <DIR>          testOne
+               0 File(s)              0 bytes
+               3 Dir(s)  99,903,455,232 bytes free
+
+C:\Users\balaji katta\testgit\gitPractice>git clone https://github.com/kattabalaji/testOne.git
+fatal: destination path 'testOne' already exists and is not an empty directory.
+
+C:\Users\balaji katta\testgit\gitPractice>ls testOne
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\balaji katta\testgit\gitPractice>git add testOne
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>cd .git
+The system cannot find the path specified.
+
+C:\Users\balaji katta\testgit\gitPractice>git add test.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>cd testOne
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Updated notesTest.txt with four and five"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'balaji katta@N000.(none)')
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git config --global user.name "balaji"
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git config --global user.email "balaji.bal45@gmail.com"
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Updated notesTest.txt with four and five"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Updated notesTest.txt with seven and eight"
+[main 7a22253] Updated notesTest.txt with seven and eight
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline
+7a22253 (HEAD -> main) Updated notesTest.txt with seven and eight
+1c2658d (origin/main, origin/HEAD) Add files via upload
+7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log
+commit 7a2225372879c2517c73f7a3d69fc3a94046c723 (HEAD -> main)
+Author: balaji <balaji.bal45@gmail.com>
+Date:   Fri Dec 12 12:17:01 2025 +0530
+
+    Updated notesTest.txt with seven and eight
+
+commit 1c2658d5873596fe4b466eff1c470de3f0aa96d1 (origin/main, origin/HEAD)
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:44:39 2025 +0530
+
+    Add files via upload
+
+commit 7c4d2e2e3caa53875bea2258f22ec3b5613b722c
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:40:42 2025 +0530
+
+    Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git restore --staged test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Adding test2.txt"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Adding test2.txt"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph
+* 7a22253 (HEAD -> main) Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate
+* 7a22253 (HEAD -> main) Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate --all
+* 7a22253 (HEAD -> main) Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Updated test.txt with twenty and twentyOne"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Updated test2.txt with twenty and twentyOne"
+[main 51996ae] Updated test2.txt with twenty and twentyOne
+ 1 file changed, 6 insertions(+)
+ create mode 100644 test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate --all
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log
+commit 51996aea58a22a3ffca74a7250b426b40d50d245 (HEAD -> main)
+Author: balaji <balaji.bal45@gmail.com>
+Date:   Fri Dec 12 12:30:16 2025 +0530
+
+    Updated test2.txt with twenty and twentyOne
+
+commit 7a2225372879c2517c73f7a3d69fc3a94046c723
+Author: balaji <balaji.bal45@gmail.com>
+Date:   Fri Dec 12 12:17:01 2025 +0530
+
+    Updated notesTest.txt with seven and eight
+
+commit 1c2658d5873596fe4b466eff1c470de3f0aa96d1 (origin/main, origin/HEAD)
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:44:39 2025 +0530
+
+    Add files via upload
+
+commit 7c4d2e2e3caa53875bea2258f22ec3b5613b722c
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:40:42 2025 +0530
+
+    Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline
+51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+7a22253 Updated notesTest.txt with seven and eight
+1c2658d (origin/main, origin/HEAD) Add files via upload
+7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline --graph --decorate --all
+* 51996ae (HEAD -> main) Updated test2.txt with twenty and twentyOne
+* 7a22253 Updated notesTest.txt with seven and eight
+* 1c2658d (origin/main, origin/HEAD) Add files via upload
+* 7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git restore --staged test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git restore --staged test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git restore test.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git restore test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log
+commit 51996aea58a22a3ffca74a7250b426b40d50d245 (HEAD -> main)
+Author: balaji <balaji.bal45@gmail.com>
+Date:   Fri Dec 12 12:30:16 2025 +0530
+
+    Updated test2.txt with twenty and twentyOne
+
+commit 7a2225372879c2517c73f7a3d69fc3a94046c723
+Author: balaji <balaji.bal45@gmail.com>
+Date:   Fri Dec 12 12:17:01 2025 +0530
+
+    Updated notesTest.txt with seven and eight
+
+commit 1c2658d5873596fe4b466eff1c470de3f0aa96d1 (origin/main, origin/HEAD)
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:44:39 2025 +0530
+
+    Add files via upload
+
+commit 7c4d2e2e3caa53875bea2258f22ec3b5613b722c
+Author: balaji <113337367+kattabalaji@users.noreply.github.com>
+Date:   Fri Dec 12 11:40:42 2025 +0530
+
+    Add files via upload
+C:\Users\balaji katta\testgit\gitPractice\testOne>git revert Head
+
+This reverts commit 51996aea58a22a3ffca74a7250b426b40d50d245.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#       deleted:    test2.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* feature
+  main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch feature
+fatal: a branch named 'feature' already exists
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git switch feature
+Already on 'feature'
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* feature
+  main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add .
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch feature
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "Part of feature in featureOne"
+On branch feature
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch feature
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline
+932aba9 (HEAD -> feature) Part of feature in featureOne
+51996ae (main) Updated test2.txt with twenty and twentyOne
+7a22253 Updated notesTest.txt with seven and eight
+1c2658d (origin/main, origin/HEAD) Add files via upload
+7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>dir
+ Volume in drive C is OS
+ Volume Serial Number is 122C-0D6C
+
+ Directory of C:\Users\balaji katta\testgit\gitPractice\testOne
+
+12-12-2025  12:47    <DIR>          .
+12-12-2025  12:11    <DIR>          ..
+12-12-2025  12:15                33 test.txt
+               1 File(s)             33 bytes
+               2 Dir(s)  95,933,288,448 bytes free
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+  feature
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge
+Already up to date.
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge featureOne
+merge: featureOne - not something we can merge
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge feature
+Updating 51996ae..932aba9
+Fast-forward
+ test2.txt | 6 ------
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 test2.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+  feature
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch -d feature
+Deleted branch feature (was 932aba9).
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge featureone
+merge: featureone - not something we can merge
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch featureOne
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add .
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge featureOne
+Already up to date.
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "test.txt of feature in featureOne"
+[main cca6920] test.txt of feature in featureOne
+ 1 file changed, 2 insertions(+)
+ create mode 100644 featureOne.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>get status
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git log --oneline
+cca6920 (HEAD -> main) test.txt of feature in featureOne
+932aba9 (featureOne) Part of feature in featureOne
+51996ae Updated test2.txt with twenty and twentyOne
+7a22253 Updated notesTest.txt with seven and eight
+1c2658d (origin/main, origin/HEAD) Add files via upload
+7c4d2e2 Add files via upload
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch -d featureOne
+Deleted branch featureOne (was 932aba9).
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --soft Head~1
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   featureOne.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "wrong commit"
+[main 00afc34] wrong commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 featureOne.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --soft Head~1
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --Hard Head~1
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "wrong commit"
+[main 4b78b17] wrong commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 featureOne.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --Hard Head~1
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "wrong commit"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --soft HEAD~1
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   featureOne.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --Hard HEAD~1
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "wrong commit"
+[main 0adcda0] wrong commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 featureOne.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git push --staged featureOne
+error: unknown option `staged'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add sample.txt
+fatal: pathspec 'sample.txt' did not match any files
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>echo "test" > sample.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add sample.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "test commit
+[main d9afb64] test commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --soft HEAD~1
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --Hard HEAD~1
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample.txt
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git commit -m "added sample.txt"
+[main cf6507f] added sample.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git push
+info: please complete authentication in your browser...
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (13/13), 1.17 KiB | 109.00 KiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/kattabalaji/testOne
+   1c2658d..cf6507f  main -> main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git reset --Hard HEAD~1
+error: unknown option `Hard'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>C:\Users\balaji katta>cd test
+The system cannot find the path specified.
+
+C:\Users\balaji katta>cd testgit\gitPractice
+
+C:\Users\balaji katta\testgit\gitPractice>git add name
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\balaji katta\testgit\gitPractice>cd testOne
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git add name
+fatal: pathspec 'name' did not match any files
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>dir
+ Volume in drive C is OS
+ Volume Serial Number is 122C-0D6C
+
+ Directory of C:\Users\balaji katta\testgit\gitPractice\testOne
+
+12-12-2025  15:07    <DIR>          .
+12-12-2025  12:11    <DIR>          ..
+12-12-2025  14:45                12 featureOne.txt
+12-12-2025  15:07                 9 sample.txt
+12-12-2025  12:15                33 test.txt
+               3 File(s)             54 bytes
+               2 Dir(s)  95,461,138,432 bytes free
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge featureOne
+merge: featureOne - not something we can merge
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge sample
+merge: sample - not something we can merge
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch name
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch
+* main
+  name
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git merge name
+Already up to date.
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git pull origin main
+From https://github.com/kattabalaji/testOne
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git push
+Everything up-to-date
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git pull origin main #merge remote into local
+fatal: couldn't find remote ref #merge
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git branch name
+fatal: a branch named 'name' already exists
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>git push
+Everything up-to-date
+
+C:\Users\balaji katta\testgit\gitPractice\testOne>
