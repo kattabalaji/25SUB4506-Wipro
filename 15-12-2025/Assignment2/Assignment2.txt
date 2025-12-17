@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while true
+do
+    read -p "Enter a number (0 to stop): " n
+    if [ "$n" -eq 0 ]; then
+        break
+    fi
+
+    if [ $((n % 2)) -eq 0 ]; then
+        echo "Even"
+    else
+        echo "Odd"
+    fi
+done

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+count_lines() {
+    if [ -f "$1" ]; then
+        wc -l "$1"
+    else
+        echo "File not found: $1"
+    fi
+}
+
+count_lines myfile.txt
+count_lines another.txt

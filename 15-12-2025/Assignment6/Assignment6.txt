@@ -1,0 +1,7 @@
+log file
+
+2025-02-01 10:30:15 ERROR Database connection failed
+2025-02-01 10:31:10 INFO Server started
+2025-02-01 10:32:05 ERROR Timeout occurred
+command
+grep "ERROR" app.log | awk '{print $1, $2, $4, $5, $6}'

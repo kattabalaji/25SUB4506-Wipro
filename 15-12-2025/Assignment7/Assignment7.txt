@@ -1,0 +1,8 @@
+txt file.
+
+This is old_text in file.
+Another old_text line.
+
+command
+sed 's/old_text/new_text/g' Assignment7.txt > output.txt
+cat output.txt

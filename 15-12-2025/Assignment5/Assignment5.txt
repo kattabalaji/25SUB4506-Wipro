@@ -1,0 +1,23 @@
+#!/bin/bash
+
+DEBUG=true
+
+log_debug() {
+    if [ "$DEBUG" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
+if mkdir TestDir 2>/dev/null; then
+    log_debug "Directory created"
+else
+    echo "Directory already exists or permission denied"
+fi
+
+cd TestDir || exit
+
+for i in {1..10}
+do
+    echo "File$i.txt" > File$i.txt || echo "Error creating File$i.txt"
+    log_debug "Created File$i.txt"
+done
